@@ -1,0 +1,1029 @@
+/* =========================
+   RESET
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* =========================
+   BODY
+========================= */
+
+body {
+
+    font-family: "Baloo 2", cursive;
+
+    background:
+        linear-gradient(
+            135deg,
+            #fff8e8,
+            #ffe4b8
+        );
+
+    color: #4b2618;
+
+    min-height: 100vh;
+
+    overflow-x: hidden;
+
+}
+
+
+/* =========================
+   DECORATIVE CIRCLES
+========================= */
+
+.circle {
+
+    position: fixed;
+
+    border-radius: 50%;
+
+    z-index: -1;
+
+    opacity: 0.5;
+
+}
+
+.circle-one {
+
+    width: 350px;
+    height: 350px;
+
+    background: #ffd166;
+
+    top: -150px;
+    right: -100px;
+
+}
+
+.circle-two {
+
+    width: 300px;
+    height: 300px;
+
+    background: #ffb4a2;
+
+    bottom: -150px;
+    left: -100px;
+
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+header {
+
+    height: 80px;
+
+    padding: 0 7%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    background: rgba(255,255,255,0.75);
+
+    backdrop-filter: blur(10px);
+
+    border-bottom: 1px solid rgba(100,50,20,0.1);
+
+}
+
+
+.logo {
+
+    font-size: 25px;
+
+    font-weight: 800;
+
+    color: #5b2c1d;
+
+}
+
+.logo strong {
+
+    color: #e85d04;
+
+    margin-left: 5px;
+
+}
+
+
+.status {
+
+    font-size: 15px;
+
+    font-weight: 600;
+
+}
+
+.status span {
+
+    display: inline-block;
+
+    width: 10px;
+    height: 10px;
+
+    background: #2ecc71;
+
+    border-radius: 50%;
+
+    margin-right: 7px;
+
+    animation: pulse 1.5s infinite;
+
+}
+
+
+@keyframes pulse {
+
+    0% {
+        box-shadow: 0 0 0 0 rgba(46,204,113,0.5);
+    }
+
+    70% {
+        box-shadow: 0 0 0 10px rgba(46,204,113,0);
+    }
+
+    100% {
+        box-shadow: 0 0 0 0 rgba(46,204,113,0);
+    }
+
+}
+
+
+/* =========================
+   MAIN
+========================= */
+
+main {
+
+    max-width: 1250px;
+
+    margin: auto;
+
+    min-height: calc(100vh - 140px);
+
+    padding: 60px 6%;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    align-items: center;
+
+    gap: 60px;
+
+}
+
+
+/* =========================
+   CONTENT
+========================= */
+
+.content {
+
+    animation: slideLeft 0.8s ease;
+
+}
+
+
+@keyframes slideLeft {
+
+    from {
+
+        opacity: 0;
+
+        transform: translateX(-40px);
+
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform: translateX(0);
+
+    }
+
+}
+
+
+/* =========================
+   CONSTRUCTION LABEL
+========================= */
+
+.construction {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    padding: 8px 16px;
+
+    border-radius: 30px;
+
+    background: #5b2c1d;
+
+    color: white;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    letter-spacing: 1px;
+
+}
+
+
+/* =========================
+   HEADING
+========================= */
+
+h1 {
+
+    font-size: clamp(50px, 6vw, 78px);
+
+    line-height: 0.95;
+
+    margin-top: 25px;
+
+    color: #4b2618;
+
+}
+
+
+h1 span {
+
+    color: #e85d04;
+
+    display: block;
+
+}
+
+
+/* =========================
+   DESCRIPTION
+========================= */
+
+.description {
+
+    max-width: 600px;
+
+    font-size: 18px;
+
+    line-height: 1.6;
+
+    margin-top: 25px;
+
+    color: #6b4537;
+
+}
+
+
+/* =========================
+   COUNTDOWN
+========================= */
+
+.launch-title {
+
+    margin-top: 30px;
+
+    font-size: 15px;
+
+    letter-spacing: 2px;
+
+    color: #8a4b32;
+
+}
+
+
+.countdown {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    margin-top: 12px;
+
+}
+
+
+.time-box {
+
+    background: white;
+
+    width: 75px;
+
+    height: 75px;
+
+    border-radius: 18px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    box-shadow:
+        0 8px 20px rgba(80,40,20,0.12);
+
+}
+
+
+.time-box span {
+
+    font-size: 28px;
+
+    font-weight: 800;
+
+    color: #e85d04;
+
+}
+
+
+.time-box small {
+
+    font-size: 10px;
+
+    font-weight: bold;
+
+    color: #8a4b32;
+
+}
+
+
+.colon {
+
+    font-size: 25px;
+
+    font-weight: bold;
+
+    color: #e85d04;
+
+}
+
+
+/* =========================
+   NEWSLETTER
+========================= */
+
+.newsletter {
+
+    margin-top: 30px;
+
+}
+
+
+.newsletter h3 {
+
+    font-size: 20px;
+
+}
+
+
+.newsletter p {
+
+    font-size: 14px;
+
+    color: #806052;
+
+    margin-top: 3px;
+
+}
+
+
+.input-area {
+
+    display: flex;
+
+    max-width: 520px;
+
+    margin-top: 15px;
+
+    background: white;
+
+    padding: 6px;
+
+    border-radius: 50px;
+
+    box-shadow:
+        0 8px 25px rgba(70,30,10,0.12);
+
+}
+
+
+.input-area input {
+
+    flex: 1;
+
+    border: none;
+
+    outline: none;
+
+    padding: 12px 18px;
+
+    border-radius: 50px;
+
+    font-family: inherit;
+
+    font-size: 14px;
+
+}
+
+
+.input-area button {
+
+    border: none;
+
+    background: #e85d04;
+
+    color: white;
+
+    padding: 12px 20px;
+
+    border-radius: 40px;
+
+    font-family: inherit;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+
+}
+
+
+.input-area button:hover {
+
+    background: #c94d00;
+
+    transform: scale(1.03);
+
+}
+
+
+#message {
+
+    font-weight: 600;
+
+    margin-top: 8px;
+
+}
+
+
+/* =========================
+   SOCIAL
+========================= */
+
+.social {
+
+    margin-top: 25px;
+
+}
+
+
+.social > p {
+
+    font-size: 14px;
+
+}
+
+
+.social-icons {
+
+    display: flex;
+
+    gap: 12px;
+
+    margin-top: 10px;
+
+}
+
+
+.social-icons a {
+
+    width: 38px;
+
+    height: 38px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background: #5b2c1d;
+
+    color: white;
+
+    border-radius: 50%;
+
+    text-decoration: none;
+
+    transition: 0.3s;
+
+}
+
+
+.social-icons a:hover {
+
+    background: #e85d04;
+
+    transform: translateY(-5px) rotate(5deg);
+
+}
+
+
+/* =========================
+   WAFFLE SHOWCASE
+========================= */
+
+.waffle-showcase {
+
+    min-height: 570px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    position: relative;
+
+    animation: slideRight 0.9s ease;
+
+}
+
+
+@keyframes slideRight {
+
+    from {
+
+        opacity: 0;
+
+        transform: translateX(40px);
+
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform: translateX(0);
+
+    }
+
+}
+
+
+/* =========================
+   MAIN WAFFLE
+========================= */
+
+.main-waffle {
+
+    width: 350px;
+
+    height: 350px;
+
+    border-radius: 50%;
+
+    background:
+        radial-gradient(
+            circle,
+            #ffc55a,
+            #d87921
+        );
+
+    box-shadow:
+        0 30px 50px rgba(80,40,10,0.25);
+
+    position: relative;
+
+    transform: rotate(-8deg);
+
+    animation: floatWaffle 4s infinite ease-in-out;
+
+}
+
+
+@keyframes floatWaffle {
+
+    0% {
+        transform: translateY(0) rotate(-8deg);
+    }
+
+    50% {
+        transform: translateY(-15px) rotate(-3deg);
+    }
+
+    100% {
+        transform: translateY(0) rotate(-8deg);
+    }
+
+}
+
+
+/* =========================
+   WAFFLE GRID
+========================= */
+
+.waffle-grid {
+
+    position: absolute;
+
+    inset: 40px;
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 12px;
+
+}
+
+
+.waffle-grid span {
+
+    background: #b45b18;
+
+    border-radius: 10px;
+
+    box-shadow:
+        inset 3px 3px 5px rgba(255,255,255,0.15);
+
+}
+
+
+/* =========================
+   TOPPINGS
+========================= */
+
+.chocolate {
+
+    position: absolute;
+
+    font-size: 70px;
+
+    top: 50px;
+
+    right: 30px;
+
+    animation: toppingFloat 2.5s infinite ease-in-out;
+
+}
+
+
+.strawberry {
+
+    position: absolute;
+
+    font-size: 60px;
+
+    bottom: 40px;
+
+    left: 40px;
+
+    animation: toppingFloat 3s infinite ease-in-out;
+
+}
+
+
+@keyframes toppingFloat {
+
+    0%,100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+}
+
+
+/* =========================
+   FLOATING EMOJIS
+========================= */
+
+.floating-text {
+
+    position: absolute;
+
+    font-size: 40px;
+
+    animation: floatEmoji 3s infinite ease-in-out;
+
+}
+
+
+.text-one {
+
+    top: 40px;
+
+    right: 60px;
+
+}
+
+
+.text-two {
+
+    top: 140px;
+
+    left: 20px;
+
+    animation-delay: 1s;
+
+}
+
+
+.text-three {
+
+    bottom: 100px;
+
+    right: 20px;
+
+    animation-delay: 2s;
+
+}
+
+
+@keyframes floatEmoji {
+
+    0%,100% {
+        transform: translateY(0) rotate(0);
+    }
+
+    50% {
+        transform: translateY(-15px) rotate(10deg);
+    }
+
+}
+
+
+/* =========================
+   UPCOMING CARD
+========================= */
+
+.upcoming-card {
+
+    position: absolute;
+
+    bottom: 15px;
+
+    right: 0;
+
+    background: rgba(255,255,255,0.95);
+
+    padding: 18px;
+
+    border-radius: 22px;
+
+    box-shadow:
+        0 15px 35px rgba(70,30,10,0.15);
+
+}
+
+
+.upcoming-card h3 {
+
+    color: #e85d04;
+
+    font-size: 17px;
+
+    margin-bottom: 10px;
+
+}
+
+
+.mini-waffles {
+
+    display: flex;
+
+    gap: 15px;
+
+}
+
+
+.mini {
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    font-size: 32px;
+
+}
+
+
+.mini span {
+
+    font-size: 10px;
+
+    font-weight: bold;
+
+    color: #5b2c1d;
+
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+
+    text-align: center;
+
+    padding: 20px;
+
+    background: #5b2c1d;
+
+    color: white;
+
+    font-size: 13px;
+
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 950px) {
+
+    main {
+
+        grid-template-columns: 1fr;
+
+        text-align: center;
+
+    }
+
+    .content {
+
+        display: flex;
+
+        flex-direction: column;
+
+        align-items: center;
+
+    }
+
+    .social-icons {
+
+        justify-content: center;
+
+    }
+
+    .waffle-showcase {
+
+        min-height: 500px;
+
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    header {
+
+        padding: 0 20px;
+
+    }
+
+    .logo {
+
+        font-size: 20px;
+
+    }
+
+    .status {
+
+        font-size: 12px;
+
+    }
+
+    main {
+
+        padding: 40px 20px;
+
+    }
+
+    h1 {
+
+        font-size: 50px;
+
+    }
+
+    .description {
+
+        font-size: 16px;
+
+    }
+
+    .countdown {
+
+        gap: 4px;
+
+    }
+
+    .time-box {
+
+        width: 58px;
+
+        height: 65px;
+
+    }
+
+    .time-box span {
+
+        font-size: 22px;
+
+    }
+
+    .colon {
+
+        font-size: 18px;
+
+    }
+
+    .input-area {
+
+        flex-direction: column;
+
+        background: transparent;
+
+        box-shadow: none;
+
+        gap: 8px;
+
+    }
+
+    .input-area input {
+
+        background: white;
+
+        padding: 15px;
+
+    }
+
+    .input-area button {
+
+        width: 100%;
+
+    }
+
+    .main-waffle {
+
+        width: 270px;
+
+        height: 270px;
+
+    }
+
+    .waffle-grid {
+
+        inset: 30px;
+
+        gap: 8px;
+
+    }
+
+    .upcoming-card {
+
+        right: 50%;
+
+        transform: translateX(50%);
+
+        width: 290px;
+
+    }
+
+    .mini-waffles {
+
+        justify-content: center;
+
+    }
+
+}
